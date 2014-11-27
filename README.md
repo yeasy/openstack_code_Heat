@@ -1,6 +1,6 @@
 OpenStack Heat 源码分析
 ============
-[Heat](https://wiki.openstack.org/wiki/Heat) 是 OpenStack 项目中负责部署、协调资源的平台工具。
+[Heat](https://wiki.openstack.org/wiki/Heat) 是 OpenStack 项目中负责部署、协调资源的平台工具，它允许用户提前写好一个模板文件，然后通过 Heat 引擎来启动、停止所定义的资源。
 
 本书将剖析 Heat 组件（服务端）的代码。
 
@@ -24,12 +24,14 @@ $ cd openstack_code_Heat
 $ git config user.name "User"
 $ git config user.email user@email.com
 ```
+
 * 修改代码后提交，并推送到自己的仓库。
 ```
 $ #do some change on the content
 $ git commit -am "Fix issue #1: change helo to hello"
 $ git push
 ```
+
 * 在 GitHub 网站上提交 pull request。
 * 定期使用项目仓库内容更新自己仓库内容。
 ```
@@ -38,3 +40,4 @@ $ git fetch upstream
 $ git checkout master
 $ git rebase upstream/master
 $ git push -f origin master
+```
